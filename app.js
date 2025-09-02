@@ -1,6 +1,6 @@
 import express from 'express'
 import HTTPSTATUSENUM from './utils/enums/httpstatusenum.js'
-import comicsRouter from './routes/comics.js'
+import comicsRouter from './routes/comics.route.js'
 
 const app = express()
 
