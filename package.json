@@ -1,0 +1,26 @@
+{
+  "name": "spacomics",
+  "version": "1.0.0",
+  "description": "A api for read comics in spanish",
+  "keywords": [
+    "spanish",
+    "anime",
+    "manga",
+    "comics",
+    "spider-man",
+    "cartoon"
+  ],
+  "license": "ISC",
+  "author": "soundwave01",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node --watch --trace-warnings --env-file=.env server.js"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "cheerio": "^1.1.2",
+    "express": "^5.1.0"
+  }
+}

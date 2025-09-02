@@ -1,0 +1,7 @@
+const HTTPSTATUSENUM = {
+  SUCCESS: 'SUCCESS',
+  FAIL: 'FAIL',
+  ERROR: 'ERROR',
+}
+
+export default HTTPSTATUSENUM
