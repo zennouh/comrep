@@ -1,5 +1,5 @@
 import express from 'express'
-import homeController from '../controllers/home.controller'
+import homeController from '../controllers/home.controller.js'
 
 const comicsRouter = express.Router()
 

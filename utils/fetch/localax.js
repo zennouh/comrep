@@ -1,9 +1,9 @@
-import axios, { AxiosError } from 'axios'
+import fs from 'fs'
 
 export const fetchHtml = async (url) => {
   try {
-    const response = await axios.get(url)
-    return response.data
+    const data = fs.readFileSync('./index.html', 'utf-8')
+    return data
   } catch (error) {
     if (error instanceof axios.AxiosError) {
       error.statusCode ||= error.response.status

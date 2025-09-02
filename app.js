@@ -6,8 +6,9 @@ const app = express()
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use(express.static('../'))
 
-app.use('api/v1/comics', comicsRouter)
+app.use('/api/v1', comicsRouter)
 
 app.all('/{*any}', (req, res, next) => {
   res.status(404).json({
