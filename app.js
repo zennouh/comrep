@@ -19,7 +19,7 @@ app.all('/{*any}', (req, res, next) => {
 
 app.use((error, req, res, next) => {
   error.statusCode ||= 500
-  error.httpstatus || HTTPSTATUSENUM.ERROR
+  error.httpstatus ||= HTTPSTATUSENUM.ERROR
   error.message ||= 'Internal Server Error'
   res.status(error.statusCode).json({
     status: error.httpstatus,
