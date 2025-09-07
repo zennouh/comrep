@@ -10,7 +10,7 @@ const seachController = async (req, res, next) => {
     const page = req.query.page || 1
     const q = req.query.q || ''
     const url = appUrls.home + 'page/' + page
-    console.log(url)
+    // console.log(url)
 
     const html = await fetchHtml(url, q)
 
