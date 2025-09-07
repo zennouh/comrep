@@ -1,7 +1,6 @@
 import appUrls from '../utils/constence/urls.js'
 import HTTPSTATUSENUM from '../utils/enums/httpstatusenum.js'
 import { fetchHtml } from '../utils/fetch/axios.js'
-// import { fetchHtml } from '../utils/fetch/localax.js'
 import * as cheerio from 'cheerio'
 import { extractedHomeData } from '../utils/extractdata/homedata.js'
 
